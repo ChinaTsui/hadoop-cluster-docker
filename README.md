@@ -1,24 +1,21 @@
 ## Run Hadoop Cluster within Docker Containers
 
-- Blog: [Run Hadoop Cluster in Docker Update](http://kiwenlau.com/2016/06/26/hadoop-cluster-docker-update-english/)
-- 博客: [基于Docker搭建Hadoop集群之升级版](http://kiwenlau.com/2016/06/12/160612-hadoop-cluster-docker-update/)
+Forked from https://github.com/kiwenlau/hadoop-cluster-docker, too many thanks to the author who made so big contribution.
 
+In addition, I'd like to introduce some extra stuffs as an extention.
 
-![alt tag](https://raw.githubusercontent.com/kiwenlau/hadoop-cluster-docker/master/hadoop-cluster-docker.png)
-
-
-### 3 Nodes Hadoop Cluster
+### Section A: Three Nodes Hadoop Cluster
 
 ##### 1. pull docker image
 
 ```
-sudo docker pull kiwenlau/hadoop:1.0
+sudo docker pull chinatsui/hadoop:1.0
 ```
 
 ##### 2. clone github repository
 
 ```
-git clone https://github.com/kiwenlau/hadoop-cluster-docker
+git clone https://github.com/ChinaTsui/hadoop-cluster-docker
 ```
 
 ##### 3. create hadoop network
@@ -72,7 +69,7 @@ Hadoop    1
 Hello    2
 ```
 
-### Arbitrary size Hadoop cluster
+### Section B: Arbitrary size Hadoop cluster
 
 ##### 1. pull docker images and clone github repository
 
